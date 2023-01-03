@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+form{
+    text-align: center;
+    border:2px solid rgb(176, 243, 246);
+    width: 300px;
+    height: 500px;
+    background-color: rgb(183, 247, 225);
+    margin-left: 39%;
+    border-radius: 10%;
+    margin-top: 2rem;
+}
+.container{
+    padding: 70px;
+}
+label, input {
+    display: block;
+}
+body {
+        background-image: url(904965_v9.webp);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: cover;
+      }
+      h2{
+        text-align: center;
+        font-size: 40px;
+      }
+</style>
+</head>
+<body>
+  <h2>Sign up</h2>
+    <form action="RegisterServlet" method="post">
+        <div class="container"> 
+                   <label style="font-weight: bold;">Username : </label> 
+                   <input type="text" placeholder="Enter Username" name="username" required>
+                   <br>
+                    <label style="font-weight: bold;">Email : </label> 
+                   <input type="text" placeholder="Enter mail" name="usermail" required>
+                   <br>
+                   <label style="font-weight: bold;">Password : </label> 
+                   <input type="password" placeholder="Enter Password" name="password" required>
+                   <br>
+                   <label style="font-weight: bold;">Repeat Password : </label> 
+                   <input type="password" placeholder="Repeat your Password" name="repeatpassword" required>
+                   <br>
+                    <input type="checkbox" checked="checked"> I agree all statements in Terms of service
+                    <br>
+                   <button type="submit">Resister</button>
+               </div> 
+       </form>
+</body>
+</html> 
